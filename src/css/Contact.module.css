@@ -168,6 +168,23 @@
     transform: translateY(-2px);
 }
 
+.successMsg {
+    font-size: 0.9rem;
+    color: #2d6a4f;
+    font-weight: 600;
+    background-color: #d8ead9;
+    padding: 10px 14px;
+    border-radius: 6px;
+}
+
+.errorMsg {
+    font-size: 0.9rem;
+    color: #c0392b;
+    font-weight: 600;
+    background-color: #fde8e8;
+    padding: 10px 14px;
+    border-radius: 6px;
+}
 
 /* =======================================
    RESPONSIVE BREAKPOINTS 320px → 2000px
