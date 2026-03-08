@@ -22,6 +22,7 @@ A personal portfolio website built with **React JS**, showcasing my skills, expe
 
 ## 🚀 Run Locally
 ```bash
+node v22
 npm install
 npm run dev
 ```

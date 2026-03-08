@@ -8,7 +8,7 @@ function Home() {
             <div className={styles.container}>
 
                 {/* LEFT - TEXT */}
-                <div className={styles.textSide}>
+                <div data-aos="fade-up" className={styles.textSide}>
                     <p className={styles.hello}>Hello <span>♥</span></p>
 
                     <h1 className={styles.name}>I'm Gopala Krishnan</h1>
@@ -35,7 +35,7 @@ function Home() {
                 </div>
 
                 {/* RIGHT - IMAGE */}
-                <div className={styles.imageSide}>
+                <div data-aos="fade-down" className={styles.imageSide}>
                     <div className={styles.blobWrapper}>
                         <img
                             src={profileImg}

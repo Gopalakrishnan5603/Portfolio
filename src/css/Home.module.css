@@ -27,7 +27,6 @@
     font-size: 1rem;
     color: #555;
     margin-bottom: 8px;
-    font-family: "Georgia", serif;
 }
 
 .hello span {
@@ -39,7 +38,6 @@
     font-weight: 700;
     color: #1a1a1a;
     margin-bottom: 14px;
-    font-family: "Georgia", serif;
     line-height: 1.2;
 }
 
@@ -54,7 +52,6 @@
 .highlight {
     color: #e84393;
     font-weight: 600;
-    font-family: "Courier New", monospace;
 }
 
 /* ===== CV BUTTON ===== */

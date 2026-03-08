@@ -17,7 +17,6 @@
 
 .sectionTitle h2 {
     font-size: 2rem;
-    font-family: "Georgia", serif;
     font-weight: 700;
     color: #1b4332;
     letter-spacing: 4px;
@@ -55,7 +54,6 @@
     font-weight: 700;
     letter-spacing: 2px;
     color: #1b4332;
-    font-family: "Georgia", serif;
     text-align: center;
     margin-bottom: 28px;
     padding-bottom: 10px;
@@ -99,7 +97,6 @@
     font-weight: 700;
     color: #e84393;
     letter-spacing: 0.5px;
-    font-family: "Georgia", serif;
     margin: 0;
 }
 
@@ -133,7 +130,6 @@
 .techName {
     font-size: 0.88rem;
     color: #2a2a2a;
-    font-family: "Georgia", serif;
 }
 
 .techPercent {
@@ -175,7 +171,6 @@
 .interPersonalName {
     font-size: 0.88rem;
     color: #2a2a2a;
-    font-family: "Georgia", serif;
 }
 
 .stars {

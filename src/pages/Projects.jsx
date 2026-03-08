@@ -71,7 +71,7 @@ function Projects() {
             </div>
 
             {/* CARDS */}
-            <div className={styles.container}>
+            <div className={styles.container} data-aos="zoom-up">
                 {projects.map((project) => (
                     <div key={project.id} className={styles.card}>
 

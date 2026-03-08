@@ -6,7 +6,7 @@ function About() {
         <section id="about" className={styles.aboutSection}>
 
             {/* SECTION TITLE */}
-            <div className={styles.sectionTitle}>
+            <div className={styles.sectionTitle} >
                 <h2>About <span>Me</span></h2>
                 <div className={styles.titleUnderline}></div>
             </div>
@@ -14,7 +14,7 @@ function About() {
             <div className={styles.container}>
 
                 {/* LEFT - ILLUSTRATION */}
-                <div className={styles.imageSide}>
+                <div className={styles.imageSide} data-aos="fade-up">
                     <div className={styles.imgWrapper}>
                         <img
                             src={aboutIllustration}
@@ -25,7 +25,7 @@ function About() {
                 </div>
 
                 {/* RIGHT - CONTENT */}
-                <div className={styles.contentSide}>
+                <div className={styles.contentSide} data-aos="fade-down">
 
                     <p className={styles.para}>
                         I'm <strong>Gopala Krishnan</strong>, a passionate <strong>React JS Frontend Developer</strong> and

@@ -32,7 +32,7 @@ function Contact() {
             <div className={styles.container}>
 
                 {/* LEFT - INFO */}
-                <div className={styles.infoSide}>
+                <div className={styles.infoSide} data-aos="fade-down">
                     <h3 className={styles.letsTalk}>LET'S WORK TOGETHER!</h3>
 
                     <p className={styles.introPara}>
@@ -69,7 +69,7 @@ function Contact() {
                 </div>
 
                 {/* RIGHT - FORM */}
-                <div className={styles.formSide}>
+                <div className={styles.formSide} data-aos="fade-up">
                     <form className={styles.form} onSubmit={handleSubmit}>
 
                         <input

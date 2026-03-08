@@ -30,7 +30,6 @@
     font-weight: 700;
     letter-spacing: 1px;
     color: #ffffff;
-    font-family: "Georgia", serif;
 }
 
 /* ===== MENU ===== */
@@ -39,7 +38,6 @@
     position: relative;
     transition: color 0.3s ease;
     font-size: 0.95rem;
-    font-family: "Georgia", serif;
     color: #d8ead9 !important;
     text-decoration: none;
 }
@@ -100,7 +98,6 @@
 
 :global(#offcanvasNavbarLabel) {
     color: #ffffff;
-    font-family: "Georgia", serif;
     font-weight: 700;
     letter-spacing: 1px;
 }

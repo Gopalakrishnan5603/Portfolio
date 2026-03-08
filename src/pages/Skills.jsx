@@ -73,7 +73,7 @@ function Skills() {
             <div className={styles.container}>
 
                 {/* COLUMN 1 - INTERESTS */}
-                <div className={styles.column}>
+                <div className={styles.column} data-aos="zoom-in">
                     <h3 className={styles.columnTitle}>INTERESTS</h3>
                     <div className={styles.interestList}>
                         {interests.map((item, i) => (
@@ -89,7 +89,7 @@ function Skills() {
                 </div>
 
                 {/* COLUMN 2 - TECHNICAL */}
-                <div className={styles.column}>
+                <div className={styles.column} data-aos="zoom-in">
                     <h3 className={styles.columnTitle}>TECHNICAL</h3>
                     <div className={styles.techList}>
                         {technical.map((skill, i) => (
@@ -110,7 +110,7 @@ function Skills() {
                 </div>
 
                 {/* COLUMN 3 - INTERPERSONAL */}
-                <div className={styles.column}>
+                <div className={styles.column} data-aos="zoom-in">
                     <h3 className={styles.columnTitle}>INTERPERSONAL</h3>
                     <div className={styles.interPersonalList}>
                         {interpersonal.map((item, i) => (

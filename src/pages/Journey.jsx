@@ -46,7 +46,7 @@ function Journey() {
                         className={`${styles.timelineRow} ${item.side === "right" ? styles.rowRight : styles.rowLeft}`}
                     >
                         {/* LEFT SLOT */}
-                        <div className={styles.cardSlot}>
+                        <div className={styles.cardSlot} data-aos="fade-left">
                             {item.side === "left" && (
                                 <div className={styles.card}>
                                     <h4 className={styles.cardTitle}>{item.title}</h4>
@@ -66,7 +66,7 @@ function Journey() {
                         </div>
 
                         {/* RIGHT SLOT */}
-                        <div className={styles.cardSlot}>
+                        <div className={styles.cardSlot} data-aos="fade-right">
                             {item.side === "right" && (
                                 <div className={styles.card}>
                                     <h4 className={styles.cardTitle}>{item.title}</h4>
