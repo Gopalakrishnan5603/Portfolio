@@ -1,0 +1,561 @@
+/* ===== SKILLS SECTION ===== */
+.skillsSection {
+    min-height: 100vh;
+    background-color: #f5f9f5;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ===== SECTION TITLE ===== */
+.sectionTitle {
+    text-align: center;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.sectionTitle h2 {
+    font-size: 2rem;
+    font-family: "Georgia", serif;
+    font-weight: 700;
+    color: #1b4332;
+    letter-spacing: 4px;
+}
+
+.titleUnderline {
+    width: 70px;
+    height: 3px;
+    background-color: #2d6a4f;
+    margin: 12px auto 0;
+    border-radius: 2px;
+}
+
+/* ===== 3 COLUMN CONTAINER ===== */
+.container {
+    width: 88%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* ===== EACH COLUMN ===== */
+.column {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.columnTitle {
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #1b4332;
+    font-family: "Georgia", serif;
+    text-align: center;
+    margin-bottom: 28px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #d0e8d8;
+}
+
+/* ===== INTERESTS ===== */
+.interestList {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.interestCard {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 18px 20px;
+    box-shadow: 0 3px 16px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s ease;
+}
+
+.interestCard:hover {
+    transform: translateY(-3px);
+}
+
+.interestHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.interestIcon {
+    color: #e84393;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.interestTitle {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #e84393;
+    letter-spacing: 0.5px;
+    font-family: "Georgia", serif;
+    margin: 0;
+}
+
+.interestDesc {
+    font-size: 0.85rem;
+    color: #555;
+    line-height: 1.7;
+    text-align: justify;
+    margin: 0;
+}
+
+/* ===== TECHNICAL SKILLS ===== */
+.techList {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.techItem {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.techLabelRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.techName {
+    font-size: 0.88rem;
+    color: #2a2a2a;
+    font-family: "Georgia", serif;
+}
+
+.techPercent {
+    font-size: 0.82rem;
+    color: #555;
+    font-weight: 600;
+}
+
+.progressBar {
+    width: 100%;
+    height: 8px;
+    background-color: #d9ead3;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progressFill {
+    height: 100%;
+    background-color: #1b4332;
+    border-radius: 10px;
+    transition: width 1s ease;
+}
+
+/* ===== INTERPERSONAL ===== */
+.interPersonalList {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.interPersonalItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e8f4ea;
+    padding-bottom: 10px;
+}
+
+.interPersonalName {
+    font-size: 0.88rem;
+    color: #2a2a2a;
+    font-family: "Georgia", serif;
+}
+
+.stars {
+    display: flex;
+    gap: 3px;
+}
+
+.starFilled {
+    color: #f5a623;
+    font-size: 1rem;
+}
+
+.starEmpty {
+    color: #ccc;
+    font-size: 1rem;
+}
+
+
+/* =======================================
+   RESPONSIVE BREAKPOINTS 320px → 2000px
+======================================= */
+
+/* 320px - 479px : Tiny phones — full stack, one column */
+@media (max-width: 479px) {
+    .skillsSection {
+        padding: 44px 0;
+    }
+
+    .sectionTitle h2 {
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+    }
+
+    .sectionTitle {
+        margin-bottom: 28px;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 92%;
+        gap: 32px;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .columnTitle {
+        font-size: 0.82rem;
+        letter-spacing: 1.5px;
+        margin-bottom: 18px;
+    }
+
+    /* Interests */
+    .interestCard {
+        padding: 14px 16px;
+    }
+
+    .interestTitle {
+        font-size: 0.78rem;
+    }
+
+    .interestDesc {
+        font-size: 0.78rem;
+        line-height: 1.65;
+    }
+
+    /* Technical */
+    .techName {
+        font-size: 0.82rem;
+    }
+
+    .techPercent {
+        font-size: 0.78rem;
+    }
+
+    .progressBar {
+        height: 7px;
+    }
+
+    /* Interpersonal */
+    .interPersonalName {
+        font-size: 0.82rem;
+    }
+
+    .starFilled,
+    .starEmpty {
+        font-size: 0.88rem;
+    }
+}
+
+/* 480px - 575px : Small phones */
+@media (min-width: 480px) and (max-width: 575px) {
+    .skillsSection {
+        padding: 50px 0;
+    }
+
+    .sectionTitle h2 {
+        font-size: 1.4rem;
+        letter-spacing: 2px;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 90%;
+        gap: 32px;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .interestDesc {
+        font-size: 0.82rem;
+    }
+
+    .techName,
+    .interPersonalName {
+        font-size: 0.84rem;
+    }
+
+    .progressBar {
+        height: 7px;
+    }
+}
+
+/* 576px - 767px : Large phones */
+@media (min-width: 576px) and (max-width: 767px) {
+    .skillsSection {
+        padding: 55px 0;
+    }
+
+    .sectionTitle h2 {
+        font-size: 1.55rem;
+        letter-spacing: 3px;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 88%;
+        gap: 34px;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    /* Technical + Interpersonal side by side on large phones */
+    .column:nth-child(2),
+    .column:nth-child(3) {
+        width: 100%;
+    }
+
+    .interestDesc {
+        font-size: 0.85rem;
+    }
+
+    .techName,
+    .interPersonalName {
+        font-size: 0.86rem;
+    }
+}
+
+/* 768px - 991px : Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+    .skillsSection {
+        padding: 60px 0;
+    }
+
+    .sectionTitle h2 {
+        font-size: 1.7rem;
+    }
+
+    /* stack all columns vertically, full width */
+    .container {
+        flex-direction: column;
+        width: 88%;
+        gap: 36px;
+    }
+
+    .column {
+        width: 100%;
+        flex: 0 0 100%;
+    }
+
+    /* interests — 3 cards in a row */
+    .interestList {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+
+    .interestDesc {
+        font-size: 0.83rem;
+    }
+
+    /* technical — 2 column grid */
+    .techList {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px 40px;
+    }
+
+    .techName {
+        font-size: 0.88rem;
+    }
+
+    .techPercent {
+        font-size: 0.84rem;
+    }
+
+    .progressBar {
+        height: 8px;
+    }
+
+    /* interpersonal — 2 column grid */
+    .interPersonalList {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px 40px;
+    }
+
+    .interPersonalName {
+        font-size: 0.88rem;
+    }
+
+    .starFilled,
+    .starEmpty {
+        font-size: 1rem;
+    }
+}
+
+/* 992px - 1199px : Small laptop — all 3 columns */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        flex-direction: row;
+        width: 94%;
+        gap: 24px;
+    }
+
+    .column {
+        flex: 1;
+    }
+
+    .interestDesc {
+        font-size: 0.8rem;
+        line-height: 1.65;
+    }
+
+    .interestTitle {
+        font-size: 0.78rem;
+    }
+
+    .interestCard {
+        padding: 14px 16px;
+    }
+
+    .techName,
+    .interPersonalName {
+        font-size: 0.83rem;
+    }
+
+    .techPercent {
+        font-size: 0.8rem;
+    }
+
+    .progressBar {
+        height: 7px;
+    }
+
+    .starFilled,
+    .starEmpty {
+        font-size: 0.9rem;
+    }
+}
+
+/* 1200px - 1439px : Laptop */
+@media (min-width: 1200px) and (max-width: 1439px) {
+    .container {
+        width: 88%;
+        gap: 36px;
+    }
+
+    .techName,
+    .interPersonalName {
+        font-size: 0.88rem;
+    }
+}
+
+/* 1440px - 1699px : Desktop */
+@media (min-width: 1440px) and (max-width: 1699px) {
+    .container {
+        width: 85%;
+        gap: 48px;
+    }
+
+    .sectionTitle h2 {
+        font-size: 2.2rem;
+    }
+
+    .techName,
+    .interPersonalName {
+        font-size: 0.95rem;
+    }
+
+    .interestDesc {
+        font-size: 0.9rem;
+    }
+
+    .progressBar {
+        height: 9px;
+    }
+
+    .starFilled,
+    .starEmpty {
+        font-size: 1.1rem;
+    }
+}
+
+/* 1700px - 1999px : Large desktop */
+@media (min-width: 1700px) and (max-width: 1999px) {
+    .container {
+        width: 80%;
+        gap: 56px;
+    }
+
+    .sectionTitle h2 {
+        font-size: 2.4rem;
+    }
+
+    .techName,
+    .interPersonalName {
+        font-size: 1rem;
+    }
+
+    .interestDesc {
+        font-size: 0.95rem;
+    }
+
+    .progressBar {
+        height: 10px;
+    }
+}
+
+/* 2000px+ : Ultrawide */
+@media (min-width: 2000px) {
+    .skillsSection {
+        padding: 100px 0;
+    }
+
+    .container {
+        width: 75%;
+        max-width: 1800px;
+        gap: 70px;
+    }
+
+    .sectionTitle h2 {
+        font-size: 2.8rem;
+        letter-spacing: 5px;
+    }
+
+    .techName,
+    .interPersonalName {
+        font-size: 1.1rem;
+    }
+
+    .interestDesc {
+        font-size: 1rem;
+    }
+
+    .interestTitle {
+        font-size: 0.95rem;
+    }
+
+    .progressBar {
+        height: 11px;
+    }
+
+    .starFilled,
+    .starEmpty {
+        font-size: 1.2rem;
+    }
+}

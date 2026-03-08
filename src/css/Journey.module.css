@@ -1,0 +1,442 @@
+/* ===== JOURNEY SECTION ===== */
+.journeySection {
+    min-height: 100vh;
+    background-color: #eef4ef;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ===== SECTION TITLE ===== */
+.sectionTitle {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.sectionTitle h2 {
+    font-size: 2rem;
+    font-family: "Georgia", serif;
+    font-weight: 700;
+    color: #1b4332;
+    letter-spacing: 3px;
+}
+
+.titleUnderline {
+    width: 80px;
+    height: 3px;
+    background-color: #2d6a4f;
+    margin: 12px auto 0;
+    border-radius: 2px;
+}
+
+/* ===== TIMELINE WRAPPER ===== */
+.timeline {
+    position: relative;
+    width: 85%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+/* CENTER VERTICAL LINE */
+.centerLine {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #2d6a4f;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+/* ===== TIMELINE ROW ===== */
+.timelineRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    gap: 0;
+}
+
+/* ===== CARD SLOT (left & right halves) ===== */
+.cardSlot {
+    flex: 1;
+    display: flex;
+    padding: 0 40px;
+}
+
+.rowLeft .cardSlot:first-child {
+    justify-content: flex-end;
+}
+
+.rowLeft .cardSlot:last-child {
+    justify-content: flex-start;
+}
+
+.rowRight .cardSlot:first-child {
+    justify-content: flex-end;
+}
+
+.rowRight .cardSlot:last-child {
+    justify-content: flex-start;
+}
+
+/* ===== CARD ===== */
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px 24px;
+    max-width: 320px;
+    width: 100%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.13);
+}
+
+.cardTitle {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #e84393;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    font-family: "Georgia", serif;
+    text-transform: uppercase;
+}
+
+.cardText {
+    font-size: 0.88rem;
+    color: #444;
+    line-height: 1.65;
+    margin-bottom: 8px;
+}
+
+.cardText strong {
+    color: #1a1a1a;
+}
+
+/* ===== YEAR CIRCLE ===== */
+.yearCircle {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    background-color: #2d6a4f;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    box-shadow: 0 4px 16px rgba(45, 106, 79, 0.4);
+}
+
+.yearCircle span {
+    color: #ffffff;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    font-family: "Georgia", serif;
+}
+
+
+/* =======================================
+   RESPONSIVE BREAKPOINTS 320px → 2000px
+======================================= */
+
+/* 320px - 575px : Mobile — stack all cards centered */
+@media (max-width: 575px) {
+    .journeySection {
+        padding: 50px 0;
+    }
+
+    .sectionTitle h2 {
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+    }
+
+    .sectionTitle {
+        margin-bottom: 36px;
+    }
+
+    .timeline {
+        width: 92%;
+        gap: 0;
+    }
+
+    .centerLine {
+        left: 24px;
+        transform: none;
+    }
+
+    .timelineRow {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 60px;
+        gap: 0;
+        margin-bottom: 36px;
+    }
+
+    .cardSlot {
+        padding: 0;
+        width: 100%;
+    }
+
+    /* hide empty slot on mobile */
+    .cardSlot:empty {
+        display: none;
+    }
+
+    .rowLeft .cardSlot:first-child,
+    .rowRight .cardSlot:first-child,
+    .rowLeft .cardSlot:last-child,
+    .rowRight .cardSlot:last-child {
+        justify-content: flex-start;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    .yearCircle {
+        position: absolute;
+        left: -8px;
+        top: 0;
+        width: 48px;
+        height: 48px;
+        min-width: 48px;
+    }
+
+    .yearCircle span {
+        font-size: 0.72rem;
+    }
+}
+
+/* 576px - 767px : Large phones */
+@media (min-width: 576px) and (max-width: 767px) {
+    .sectionTitle h2 {
+        font-size: 1.5rem;
+    }
+
+    .timeline {
+        width: 90%;
+        gap: 0;
+    }
+
+    .centerLine {
+        left: 28px;
+        transform: none;
+    }
+
+    .timelineRow {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 70px;
+        gap: 0;
+        margin-bottom: 40px;
+    }
+
+    .cardSlot {
+        padding: 0;
+        width: 100%;
+    }
+
+    .cardSlot:empty {
+        display: none;
+    }
+
+    .rowLeft .cardSlot:first-child,
+    .rowRight .cardSlot:first-child,
+    .rowLeft .cardSlot:last-child,
+    .rowRight .cardSlot:last-child {
+        justify-content: flex-start;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    .yearCircle {
+        position: absolute;
+        left: -5px;
+        top: 0;
+        width: 52px;
+        height: 52px;
+        min-width: 52px;
+    }
+}
+
+/* 768px - 991px : Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+    .sectionTitle h2 {
+        font-size: 1.6rem;
+    }
+
+    .timeline {
+        width: 92%;
+        gap: 44px;
+    }
+
+    .cardSlot {
+        padding: 0 20px;
+    }
+
+    .card {
+        max-width: 260px;
+        padding: 16px 18px;
+    }
+
+    .yearCircle {
+        width: 54px;
+        height: 54px;
+        min-width: 54px;
+    }
+
+    .yearCircle span {
+        font-size: 0.78rem;
+    }
+}
+
+/* 992px - 1199px : Small laptop */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .timeline {
+        width: 88%;
+        gap: 50px;
+    }
+
+    .cardSlot {
+        padding: 0 30px;
+    }
+
+    .card {
+        max-width: 290px;
+    }
+}
+
+/* 1200px - 1439px : Laptop */
+@media (min-width: 1200px) and (max-width: 1439px) {
+    .timeline {
+        width: 85%;
+        gap: 55px;
+    }
+
+    .card {
+        max-width: 310px;
+    }
+}
+
+/* 1440px - 1699px : Desktop */
+@media (min-width: 1440px) and (max-width: 1699px) {
+    .sectionTitle h2 {
+        font-size: 2.2rem;
+    }
+
+    .timeline {
+        width: 80%;
+        gap: 65px;
+    }
+
+    .card {
+        max-width: 350px;
+        padding: 22px 28px;
+    }
+
+    .cardTitle {
+        font-size: 0.88rem;
+    }
+
+    .cardText {
+        font-size: 0.93rem;
+    }
+
+    .yearCircle {
+        width: 66px;
+        height: 66px;
+        min-width: 66px;
+    }
+
+    .yearCircle span {
+        font-size: 0.88rem;
+    }
+}
+
+/* 1700px - 1999px : Large desktop */
+@media (min-width: 1700px) and (max-width: 1999px) {
+    .sectionTitle h2 {
+        font-size: 2.4rem;
+    }
+
+    .timeline {
+        width: 75%;
+        gap: 75px;
+    }
+
+    .card {
+        max-width: 400px;
+        padding: 24px 30px;
+    }
+
+    .cardTitle {
+        font-size: 0.92rem;
+    }
+
+    .cardText {
+        font-size: 0.98rem;
+    }
+
+    .yearCircle {
+        width: 72px;
+        height: 72px;
+        min-width: 72px;
+    }
+
+    .yearCircle span {
+        font-size: 0.92rem;
+    }
+}
+
+/* 2000px+ : Ultrawide */
+@media (min-width: 2000px) {
+    .journeySection {
+        padding: 100px 0;
+    }
+
+    .sectionTitle h2 {
+        font-size: 2.8rem;
+        letter-spacing: 4px;
+    }
+
+    .timeline {
+        width: 70%;
+        max-width: 1600px;
+        gap: 90px;
+    }
+
+    .card {
+        max-width: 460px;
+        padding: 28px 34px;
+    }
+
+    .cardTitle {
+        font-size: 1rem;
+    }
+
+    .cardText {
+        font-size: 1.05rem;
+    }
+
+    .yearCircle {
+        width: 80px;
+        height: 80px;
+        min-width: 80px;
+    }
+
+    .yearCircle span {
+        font-size: 1rem;
+    }
+}

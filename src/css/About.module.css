@@ -1,0 +1,374 @@
+/* ===== ABOUT SECTION ===== */
+.aboutSection {
+    min-height: 100vh;
+    background-color: #f5f9f5;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===== SECTION TITLE ===== */
+.sectionTitle {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.sectionTitle h2 {
+    font-size: 2rem;
+    /* font-family: "Georgia", serif; */
+    font-weight: 700;
+    color: #1a1a1a;
+    letter-spacing: 1px;
+}
+
+.sectionTitle h2 span {
+    color: #2d6a4f;
+}
+
+.titleUnderline {
+    width: 60px;
+    height: 4px;
+    background-color: #2d6a4f;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* ===== MAIN CONTAINER ===== */
+.container {
+    width: 88%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+/* ===== LEFT - IMAGE ===== */
+.imageSide {
+    flex: 0 0 380px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.imgWrapper {
+    width: 360px;
+    height: 420px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+    background-color: #e8f4ea;
+}
+
+.illustration {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* ===== RIGHT - CONTENT ===== */
+.contentSide {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.para {
+    font-size: 0.97rem;
+    color: #3a3a3a;
+    line-height: 1.85;
+    text-align: justify;
+    /* font-family: "Georgia", serif; */
+}
+
+.para strong {
+    color: #1b4332;
+    font-weight: 700;
+}
+
+
+/* =======================================
+   RESPONSIVE BREAKPOINTS 320px → 2000px
+======================================= */
+
+/* 320px - 479px : Tiny phones */
+@media (max-width: 479px) {
+    .aboutSection {
+        padding: 50px 0;
+    }
+
+    .sectionTitle h2 {
+        font-size: 1.4rem;
+    }
+
+    .sectionTitle {
+        margin-bottom: 30px;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 95%;
+        gap: 28px;
+        align-items: center;
+    }
+
+    .imageSide {
+        flex: unset;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .imgWrapper {
+        width: 220px;
+        height: 255px;
+        border-radius: 12px;
+    }
+
+    .para {
+        font-size: 0.82rem;
+        text-align: center;
+        line-height: 1.75;
+    }
+}
+
+/* 480px - 575px : Small phones */
+@media (min-width: 480px) and (max-width: 575px) {
+    .aboutSection {
+        padding: 55px 0;
+    }
+
+    .sectionTitle h2 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 92%;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .imageSide {
+        flex: unset;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .imgWrapper {
+        width: 250px;
+        height: 290px;
+    }
+
+    .para {
+        font-size: 0.87rem;
+        text-align: center;
+    }
+}
+
+/* 576px - 767px : Large phones */
+@media (min-width: 576px) and (max-width: 767px) {
+    .aboutSection {
+        padding: 60px 0;
+    }
+
+    .sectionTitle h2 {
+        font-size: 1.6rem;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 90%;
+        gap: 32px;
+        align-items: center;
+    }
+
+    .imageSide {
+        flex: unset;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .imgWrapper {
+        width: 280px;
+        height: 320px;
+    }
+
+    .para {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+}
+
+/* 768px - 991px : Tablets portrait */
+@media (min-width: 768px) and (max-width: 991px) {
+    .aboutSection {
+        padding: 65px 0;
+    }
+
+    .container {
+        flex-direction: row;
+        width: 92%;
+        gap: 36px;
+        align-items: flex-start;
+    }
+
+    .imageSide {
+        flex: 0 0 240px;
+    }
+
+    .imgWrapper {
+        width: 220px;
+        height: 260px;
+    }
+
+    .para {
+        font-size: 0.88rem;
+    }
+
+    .sectionTitle h2 {
+        font-size: 1.7rem;
+    }
+}
+
+/* 992px - 1199px : Tablets landscape / small laptop */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        width: 90%;
+        gap: 44px;
+    }
+
+    .imageSide {
+        flex: 0 0 280px;
+    }
+
+    .imgWrapper {
+        width: 260px;
+        height: 300px;
+    }
+
+    .para {
+        font-size: 0.92rem;
+    }
+
+    .sectionTitle h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* 1200px - 1439px : Laptop */
+@media (min-width: 1200px) and (max-width: 1439px) {
+    .container {
+        width: 88%;
+        gap: 50px;
+    }
+
+    .imageSide {
+        flex: 0 0 340px;
+    }
+
+    .imgWrapper {
+        width: 320px;
+        height: 375px;
+    }
+
+    .para {
+        font-size: 0.95rem;
+    }
+}
+
+/* 1440px - 1699px : Desktop */
+@media (min-width: 1440px) and (max-width: 1699px) {
+    .container {
+        width: 85%;
+        gap: 70px;
+    }
+
+    .imageSide {
+        flex: 0 0 400px;
+    }
+
+    .imgWrapper {
+        width: 380px;
+        height: 440px;
+    }
+
+    .sectionTitle h2 {
+        font-size: 2.2rem;
+    }
+
+    .para {
+        font-size: 1.02rem;
+        line-height: 1.9;
+    }
+}
+
+/* 1700px - 1999px : Large desktop */
+@media (min-width: 1700px) and (max-width: 1999px) {
+    .aboutSection {
+        padding: 90px 0;
+    }
+
+    .container {
+        width: 80%;
+        gap: 90px;
+    }
+
+    .imageSide {
+        flex: 0 0 440px;
+    }
+
+    .imgWrapper {
+        width: 420px;
+        height: 490px;
+    }
+
+    .sectionTitle h2 {
+        font-size: 2.4rem;
+    }
+
+    .para {
+        font-size: 1.08rem;
+        line-height: 1.95;
+    }
+}
+
+/* 2000px+ : Ultrawide */
+@media (min-width: 2000px) {
+    .aboutSection {
+        padding: 100px 0;
+    }
+
+    .container {
+        width: 75%;
+        max-width: 1800px;
+        gap: 110px;
+    }
+
+    .imageSide {
+        flex: 0 0 500px;
+    }
+
+    .imgWrapper {
+        width: 480px;
+        height: 560px;
+    }
+
+    .sectionTitle h2 {
+        font-size: 2.8rem;
+    }
+
+    .titleUnderline {
+        width: 80px;
+        height: 5px;
+    }
+
+    .para {
+        font-size: 1.2rem;
+        line-height: 2;
+    }
+}

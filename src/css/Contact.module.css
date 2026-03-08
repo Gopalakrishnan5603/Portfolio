@@ -1,0 +1,444 @@
+/* ===== CONTACT SECTION ===== */
+.contactSection {
+    min-height: 100vh;
+    background-color: #eef4ef;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ===== SECTION TITLE ===== */
+.sectionTitle {
+    text-align: center;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.sectionTitle h2 {
+    font-size: 2rem;
+    font-family: "Georgia", serif;
+    font-weight: 700;
+    color: #1b4332;
+    letter-spacing: 4px;
+}
+
+.titleUnderline {
+    width: 70px;
+    height: 3px;
+    background-color: #2d6a4f;
+    margin: 12px auto 0;
+    border-radius: 2px;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    width: 88%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+/* ===== LEFT INFO SIDE ===== */
+.infoSide {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.letsTalk {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #e84393;
+    font-family: "Georgia", serif;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+.introPara {
+    font-size: 0.92rem;
+    color: #444;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.emailLink {
+    color: #1b7ac4;
+    text-decoration: underline;
+    word-break: break-all;
+}
+
+.emailLink:hover {
+    color: #e84393;
+}
+
+.contactDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 8px;
+}
+
+.detailItem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.9rem;
+    color: #333;
+    font-family: "Georgia", serif;
+}
+
+.detailIcon {
+    color: #2d6a4f;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+/* ===== RIGHT FORM SIDE ===== */
+.formSide {
+    flex: 1.4;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.input {
+    width: 100%;
+    padding: 14px 18px;
+    border: 1.5px solid #dde8de;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-family: "Georgia", serif;
+    color: #333;
+    background-color: #ffffff;
+    outline: none;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.input:focus {
+    border-color: #2d6a4f;
+}
+
+.input::placeholder {
+    color: #aaa;
+}
+
+.textarea {
+    width: 100%;
+    padding: 14px 18px;
+    border: 1.5px solid #dde8de;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-family: "Georgia", serif;
+    color: #333;
+    background-color: #ffffff;
+    outline: none;
+    resize: vertical;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+    min-height: 140px;
+}
+
+.textarea:focus {
+    border-color: #2d6a4f;
+}
+
+.textarea::placeholder {
+    color: #aaa;
+}
+
+.submitBtn {
+    width: 100%;
+    padding: 14px;
+    background-color: #1b4332;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: "Georgia", serif;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submitBtn:hover {
+    background-color: #2d6a4f;
+    transform: translateY(-2px);
+}
+
+
+/* =======================================
+   RESPONSIVE BREAKPOINTS 320px → 2000px
+======================================= */
+
+/* 320px - 479px : Tiny phones */
+@media (max-width: 479px) {
+    .contactSection {
+        padding: 48px 0;
+    }
+
+    .sectionTitle h2 {
+        font-size: 1.4rem;
+        letter-spacing: 2px;
+    }
+
+    .sectionTitle {
+        margin-bottom: 28px;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 92%;
+        gap: 32px;
+    }
+
+    .infoSide,
+    .formSide {
+        width: 100%;
+        flex: unset;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .input,
+    .textarea,
+    .submitBtn {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .letsTalk {
+        font-size: 0.95rem;
+    }
+
+    .introPara,
+    .detailItem {
+        font-size: 0.82rem;
+    }
+
+    .input,
+    .textarea {
+        font-size: 0.82rem;
+        padding: 11px 14px;
+    }
+
+    .submitBtn {
+        font-size: 0.88rem;
+        padding: 12px;
+    }
+}
+
+/* 480px - 575px : Small phones */
+@media (min-width: 480px) and (max-width: 575px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+        gap: 32px;
+    }
+
+    .infoSide,
+    .formSide {
+        width: 100%;
+        flex: unset;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .input,
+    .textarea,
+    .submitBtn {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .sectionTitle h2 {
+        font-size: 1.5rem;
+    }
+
+    .introPara,
+    .detailItem {
+        font-size: 0.85rem;
+    }
+}
+
+/* 576px - 767px : Large phones */
+@media (min-width: 576px) and (max-width: 767px) {
+    .container {
+        flex-direction: column;
+        width: 88%;
+        gap: 34px;
+    }
+
+    .infoSide,
+    .formSide {
+        width: 100%;
+        flex: unset;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .input,
+    .textarea,
+    .submitBtn {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .sectionTitle h2 {
+        font-size: 1.6rem;
+    }
+}
+
+/* 768px - 991px : Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        flex-direction: column;
+        width: 86%;
+        gap: 36px;
+    }
+
+    .sectionTitle h2 {
+        font-size: 1.7rem;
+    }
+
+    .formSide {
+        width: 100%;
+        flex: unset;
+    }
+
+    .infoSide {
+        flex: unset;
+        width: 100%;
+    }
+}
+
+/* 992px - 1199px : Small laptop */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        width: 92%;
+        gap: 44px;
+    }
+
+    .introPara,
+    .detailItem {
+        font-size: 0.88rem;
+    }
+}
+
+/* 1200px - 1439px : Laptop */
+@media (min-width: 1200px) and (max-width: 1439px) {
+    .container {
+        width: 88%;
+        gap: 56px;
+    }
+}
+
+/* 1440px - 1699px : Desktop */
+@media (min-width: 1440px) and (max-width: 1699px) {
+    .container {
+        width: 82%;
+        gap: 70px;
+    }
+
+    .sectionTitle h2 {
+        font-size: 2.2rem;
+    }
+
+    .letsTalk {
+        font-size: 1.2rem;
+    }
+
+    .introPara,
+    .detailItem {
+        font-size: 1rem;
+    }
+
+    .input,
+    .textarea {
+        font-size: 0.97rem;
+        padding: 15px 20px;
+    }
+
+    .submitBtn {
+        font-size: 1.05rem;
+        padding: 15px;
+    }
+}
+
+/* 1700px - 1999px : Large desktop */
+@media (min-width: 1700px) and (max-width: 1999px) {
+    .container {
+        width: 78%;
+        gap: 90px;
+    }
+
+    .sectionTitle h2 {
+        font-size: 2.4rem;
+    }
+
+    .letsTalk {
+        font-size: 1.3rem;
+    }
+
+    .introPara,
+    .detailItem {
+        font-size: 1.05rem;
+    }
+
+    .input,
+    .textarea {
+        font-size: 1rem;
+    }
+}
+
+/* 2000px+ : Ultrawide */
+@media (min-width: 2000px) {
+    .contactSection {
+        padding: 100px 0;
+    }
+
+    .container {
+        width: 70%;
+        max-width: 1600px;
+        gap: 110px;
+    }
+
+    .sectionTitle h2 {
+        font-size: 2.8rem;
+        letter-spacing: 5px;
+    }
+
+    .letsTalk {
+        font-size: 1.4rem;
+    }
+
+    .introPara,
+    .detailItem {
+        font-size: 1.1rem;
+    }
+
+    .input,
+    .textarea {
+        font-size: 1.05rem;
+        padding: 16px 22px;
+    }
+
+    .submitBtn {
+        font-size: 1.1rem;
+        padding: 16px;
+    }
+}
