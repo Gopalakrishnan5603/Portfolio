@@ -1,14 +1,14 @@
 import styles from "../css/Projects.module.css";
-import ecommerce from "../assets/Images/ecommerce.webp";
+import ecommerce from "../assets/Images/ecommerce.png";
 import taskapp from "../assets/Images/taskapp.webp";
 import weatherapp from "../assets/Images/weatherapp.webp";
 
 const projects = [
     {
         id: 1,
-        title: "E-COMMERCE PRODUCT STORE",
+        title: "E-COMMERCE TECH STORE",
         description:
-            "A full-featured e-commerce store with product listing, search & filters, product detail pages, shopping cart, and a simple checkout flow.",
+            "A full-featured e-commerce tech store with product listing, search & filters, product detail pages, shopping cart, and a simple checkout flow.",
         tech: ["React", "Redux", "React Router", "API"],
         features: [
             "Product listing with search & filters",

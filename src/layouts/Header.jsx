@@ -1,3 +1,4 @@
+import { useState, useRef } from "react";
 import { Navbar, Nav, Container, Offcanvas } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
@@ -14,9 +15,15 @@ const navLinks = [
 ];
 
 function Header() {
+    const [show, setShow] = useState(false); // 👈 controls offcanvas open/close
+
     const handleScroll = (e, id) => {
         e.preventDefault();
-        document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+        setShow(false); // 👈 close offcanvas first
+
+        setTimeout(() => {
+            document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+        }, 350); // wait for offcanvas to close then scroll
     };
 
     return (
@@ -30,13 +37,18 @@ function Header() {
                 </Navbar.Brand>
 
                 {/* MOBILE MENU BUTTON */}
-                <Navbar.Toggle aria-controls="offcanvasNavbar" />
+                <Navbar.Toggle
+                    aria-controls="offcanvasNavbar"
+                    onClick={() => setShow(true)} // 👈 open offcanvas
+                />
 
                 <Navbar.Offcanvas
                     id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel"
                     placement="start"
                     className={styles.offcanvas}
+                    show={show}                      // 👈 controlled by state
+                    onHide={() => setShow(false)}    // 👈 close when X clicked
                 >
                     <Offcanvas.Header closeButton>
                         <Offcanvas.Title id="offcanvasNavbarLabel">GopalaKrishnan</Offcanvas.Title>
@@ -51,7 +63,7 @@ function Header() {
                                     key={id}
                                     href={`#${id}`}
                                     className={styles.link}
-                                    onClick={(e) => handleScroll(e, id)}
+                                    onClick={(e) => handleScroll(e, id)} // 👈 close + scroll
                                 >
                                     {label}
                                 </Nav.Link>
